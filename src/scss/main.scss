@@ -5,3 +5,7 @@ body {
   background-color: variables.$color-bg;
   color: variables.$color-text;
 }
+
+body {
+  background-color: red !important;
+}
