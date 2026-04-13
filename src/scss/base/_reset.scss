@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; // Vital para que el padding no rompa el ancho
+}
+
+body {
+  background-color: black; // Color por defecto mientras cargan las variables
+  font-family: sans-serif;
+}
