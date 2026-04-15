@@ -1,0 +1,45 @@
+@use "../abstracts/variables";
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: variables.$color-bg;
+  font-family: variables.$font-main;
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    img {
+      height: 80px;
+    }
+
+    .platform-title {
+      font-weight: 700;
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+
+  .header-buttons {
+    display: flex;
+    gap: 40px;
+    color: variables.$color-text;
+    font-weight: 500;
+    div {
+      font-size: 1rem;
+      font-weight: 400;
+      cursor: pointer;
+      transition: color 0.3s;
+      &:hover {
+        color: variables.$color-primary;
+      }
+    }
+  }
+}

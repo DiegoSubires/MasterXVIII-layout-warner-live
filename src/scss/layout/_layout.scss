@@ -1,0 +1,33 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.section-title {
+  color: variables.$color-text;
+  padding: 2rem 2rem 1rem;
+  font-size: 1.5rem;
+  font-family: variables.$font-main;
+
+  #top-text {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+}
+
+.top {
+  @include mixins.movie-grid(225px);
+}
+
+.first,
+.second {
+  @include mixins.movie-grid(250px);
+}
+
+@media (max-width: 600px) {
+  .section-title,
+  .top,
+  .first,
+  .second {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
